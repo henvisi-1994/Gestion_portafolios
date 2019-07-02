@@ -1,28 +1,31 @@
-{% extends "principal.html" %}
-{% block content%}
-<div class="wrapper fadeInDown">
-  <div id="formContent">
-    <!-- Tabs Titles -->
-
-    <!-- Icon -->
-    <div class="fadeIn first">
-      <br>
-      <h3>Sistema de Gestion de Portafolios</h3>
-      <h1><i class="fa fa-user" aria-hidden="true"></i></h1>
-    </div>
-
-    <!-- Login Form -->
-    <form>
-      <input type="text" id="login" class="fadeIn second" name="login" placeholder="Usuario">
-      <input type="text" id="password" class="fadeIn third" name="login" placeholder="Contraseña">
-      <input type="submit" class="fadeIn fourth" value="Iniciar Sesión">
-    </form>
-
-    <!-- Remind Passowrd -->
-    <div id="formFooter">
-      <a class="underlineHover" href="#">¿Olvidaste tu contraseña?</a>
-    </div>
-
-  </div>
-</div>
-{% endblock content%}
+{% load static from staticfiles %}
+<!DOCTYPE doctype html>
+<html lang="es">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+            <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+                <!-- Bootstrap CSS -->
+                <link href="{% static '/css/bootstrap.min.css' %}" rel="stylesheet">
+                    <link href="{% static '/css/font-awesome.min.css' %}" rel="stylesheet">
+                        <link href="{% static '/css/logingestionPortafolio.css' %}" rel="stylesheet">
+                            <title>
+                                Sistema de Gestion de Portafolios
+                            </title>
+                        </link>
+                    </link>
+                </link>
+            </meta>
+        </meta>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                {% block content %}
+                {% endblock content %}
+            </div>
+        </div>
+        {% include "footer.html" %}
+        {% include "scripts.html" %}
+    </body>
+</html>

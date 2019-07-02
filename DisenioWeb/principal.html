@@ -1,15 +1,40 @@
-{% load static from staticfiles %}
-<!DOCTYPE doctype html>
-<html lang="es">
-    {% include "header.html" %}
-    <body>
-        <div class="container">
-            <div class="row">
-       		 	{% block content %}
-    			{% endblock content %}
-            </div>
-        </div>
-        {% include "footer.html" %}
-        {% include "scripts.html" %}
-    </body>
-</html>
+{% extends "login.html" %}
+{% block content%}
+<!--
+    you can substitue the span of reauth email for a input with the email and
+    include the remember me checkbox
+    -->
+<div class="container">
+    <div class="card card-container">
+        <!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
+        <center><h3>Sistema de Gestion de Portafolios</h3></center>
+        <img class="profile-img-card" id="profile-img" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"/>
+        <p class="profile-name-card" id="profile-name">
+        </p>
+        <form class="form-signin">
+            <span class="reauth-email" id="reauth-email">
+            </span>
+            <input autofocus="" class="form-control" id="inputEmail" placeholder="Usuario" required="" type="text">
+                <input class="form-control" id="inputPassword" placeholder="Contraseña" required="" type="password">
+                    <div class="checkbox" id="remember">
+                        <label>
+                            <input type="checkbox" value="remember-me">
+                                Recordar
+                            </input>
+                        </label>
+                    </div>
+                    <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">
+                        Iniciar Sesión
+                    </button>
+                </input>
+            </input>
+        </form>
+        <!-- /form -->
+        <a class="forgot-password" href="#">
+            ¿Olvidaste tu contraseña?
+        </a>
+    </div>
+    <!-- /card-container -->
+</div>
+<!-- /container -->
+{% endblock content%}
