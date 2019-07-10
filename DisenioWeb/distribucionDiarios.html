@@ -1,0 +1,194 @@
+{% extends "basic_layout.html" %}
+{% block content%}
+<div class="col-12 col-md-offset-6">
+    <center>
+        <h3>
+            Distribucion de Diarios
+        </h3>
+    </center>
+    <div class="container">
+        <div class="row">
+            <div class="form-group col">
+                <label for="exampleFormControlSelect1">
+                    Modo de Distribución
+                </label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>
+                        Manual
+                    </option>
+                    <option>
+                        Aleatorea
+                    </option>
+                </select>
+            </div>
+            <div class="form-group col">
+                <label for="exampleFormControlSelect1">
+                    Asignatura
+                </label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>
+                        Programación VI - 2019 - E1
+                    </option>
+                    <option>
+                        Asignatura 2
+                    </option>
+                    <option>
+                        Asignatura 3
+                    </option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">
+                    Diarios
+                </th>
+                <th scope="col">
+                    Acción
+                </th>
+                <th scope="col">
+                    Nombres
+                </th>
+                <th scope="col">
+                    Apellidos
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">
+                    Diario 1
+                </th>
+                <td>
+                    <button>
+                        <i aria-hidden="true" class="fa fa-user-plus">
+                        </i>
+                        Asignar
+                    </button>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    Diario 2
+                </th>
+                <td>
+                    <button>
+                        <i aria-hidden="true" class="fa fa-user-plus">
+                        </i>
+                        Asignar
+                    </button>
+                </td>
+                <td>
+                    Jazmin
+                </td>
+                <td>
+                    Orellana
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    Diario 3
+                </th>
+                <td>
+                    <button>
+                        <i aria-hidden="true" class="fa fa-user-plus">
+                        </i>
+                        Asignar
+                    </button>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    Diario 4
+                </th>
+                <td>
+                    <button>
+                        <i aria-hidden="true" class="fa fa-user-plus">
+                        </i>
+                        Asignar
+                    </button>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    Diario 5
+                </th>
+                <td>
+                    <button>
+                        <i aria-hidden="true" class="fa fa-user-plus">
+                        </i>
+                        Asignar
+                    </button>
+                </td>
+                <td>
+                    Paul
+                </td>
+                <td>
+                    Torres
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    Diario 6
+                </th>
+                <td>
+                    <button>
+                        <i aria-hidden="true" class="fa fa-user-plus">
+                        </i>
+                        Asignar
+                    </button>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    </br>
+    <div class="col-12 col-md-offset-6">
+        <ul class="pagination justify-content-center">
+            <li class="page-item">
+                <a class="page-link" href="#">
+                    Previous
+                </a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">
+                    1
+                </a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">
+                    2
+                </a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">
+                    3
+                </a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">
+                    Next
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+{% endblock content%}
