@@ -19,3 +19,22 @@
   width: 450px;
 }
 /* Arrartrar y soltar*/
+.btn-group{
+    display: flex;
+    justify-content: flex-end;
+    text-align: flex-end;
+}
+.btn-group{
+    height:0px; 
+    margin-bottom:55px;
+}
+
+.identificador{
+    text-align: center;
+}
+
+.form-group-row{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
