@@ -1,0 +1,69 @@
+/*Variables declaration*/
+:root {
+    --primary-color: 25, 69, 124;
+    --secondary-color: 238, 238, 238;
+    --white-color: 255, 255, 255;
+    --black-color: 0, 0, 0;
+    --font-size: 14px;
+    --border-radius: 10px;
+}
+
+html, body {
+    height: 100%;
+}
+
+.content-navbar {
+    background-color: rgb(var(--primary-color)) !important;
+}
+
+.container-main {
+    background-color: rgb(var(--secondary-color));
+    background-image: url('../assets/mainbg.png');
+    background-repeat:no-repeat;
+    background-position: bottom;
+    background-size: 100% auto;
+}
+
+.container-faculties {
+    overflow-y: auto;
+}
+
+.container-subjects {
+    background-color: rgb(var(--white-color));
+    box-shadow: 1px 2px 2px rgba(var(--black-color), .2);
+    border-radius: var(--border-radius);
+    width: 600px;
+}
+
+.button-faculty {
+    padding: 15px;
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    background-color: rgb(var(--white-color));
+}
+
+.button-faculty:hover {
+    background-color: rgb(var(--primary-color));
+    color: rgb(var(--white-color));
+}
+
+/* Diarios estilos */
+
+.container-diary {
+    width: 700px;
+}
+
+.container-diary_form{
+    overflow-y: auto;
+}
+
+/* MODIFIERS */
+
+.br-0 {
+    border-radius: 0 !important;
+}
+
+.bn {
+    border: none;
+}

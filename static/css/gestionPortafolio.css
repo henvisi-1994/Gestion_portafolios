@@ -1,24 +1,4 @@
-/*Variables declaration*/
-:root {
-    --primary-color: 25, 69, 124;
-    --secondary-color: 238, 238, 238;
-    --white-color: 255, 255, 255;
-    --black-color: 0, 0, 0;
-    --font-size: 14px;
-}
-
-.content-navbar{
-    background-color: rgb(var(--primary-color)) !important;
-}
-
-.list-group-item.active{
-    background-color: rgb(var(--primary-color)) !important;
-    border-color: rgb(var(--primary-color)) !important;
-}
-.form {
-  width: 450px;
-}
-/* Arrartrar y soltar*/
+/* Gestion Portafolio*/
 .btn-group{
     display: flex;
     justify-content: flex-end;

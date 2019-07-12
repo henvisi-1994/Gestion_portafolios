@@ -1,49 +1,78 @@
-<div class="col-3 px-0">
-    <div class="list-group">
-        <a class="list-group-item list-group-item-action active" href="#">
+<div class="col-3 px-0 h-100">
+    <div class="accordion h-100 container-faculties" id="accordionFaculties">
+        <div class="card br-0 bn">
+            <h3>
                 Gestionar Portafolio
-        </a>
-        <a class="list-group-item list-group-item-action" href="#">
-            Gestionar Estudiante
-        </a>
-        <a class="list-group-item list-group-item-action" href="datosInformativos">
-            Datos Informativos
-        </a>
-        <a class="list-group-item list-group-item-action active" href="#">
-            Elementos Corriculares
-        </a>
-        <a class="list-group-item list-group-item-action" href="intraclases">
-            Tareas Intraclases
-        </a>
-        <a class="list-group-item list-group-item-action" href="#">
-            Tareas Extraclases
-        </a>
-        <a class="list-group-item list-group-item-action" href="#">
-            Diarios Metacognitivos
-        </a>
-        <a class="list-group-item list-group-item-action" href="#">
-            Reparticion de diarios
-        </a>
-        <a class="list-group-item list-group-item-action" href="#">
-            Reporte de participación
-        </a>
-        <a class="list-group-item list-group-item-action" href="proyecto">
-            Proyecto
-        </a>
-        <a class="list-group-item list-group-item-action" href="#">
-            Practicas de Laboratorio
-        </a>
-        <a class="list-group-item list-group-item-action" href="#">
-            Evaluaciones
-        </a>
-        <a class="list-group-item list-group-item-action" href="#">
-            Examenes
-        </a>
-        <a class="list-group-item list-group-item-action" href="#">
-            Anexos
-        </a>
-        <a class="list-group-item list-group-item-action" href="#">
-            Informe Final
-        </a>
+            </h3>
+            <div class="card-header p-0" id="headingCero">
+                <button aria-controls="collapseCero" aria-expanded="true" class="btn button-faculty text-left" data-target="#collapseCero" data-toggle="collapse" type="button">
+                    Gestionar Estudiante
+                </button>
+            </div>
+            <div aria-labelledby="headingTwo" class="collapse" data-parent="#accordionFaculties" id="collapseCero">
+                <div class="card-body p-0">
+                    <div class="list-group">
+                        <a class="list-group-item list-group-item-action pl-5 br-0" href="#">
+                            Agregar
+                        </a>
+                        <a class="list-group-item list-group-item-action pl-5 br-0" href="#">
+                            Eliminar
+                        </a>
+                        <a class="list-group-item list-group-item-action pl-5 br-0" href="#">
+                            Visualizar
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-header p-0" id="headingOne">
+                <a aria-controls="collapseOne" aria-expanded="true" class="btn button-faculty text-left" data-target="#collapseOne" data-toggle="collapse" href="#" type="button">
+                    Datos Informativos
+                </a>
+            </div>
+            <div class="card-header p-0" id="headingTwo">
+                <button aria-controls="collapseTwo" aria-expanded="true" class="btn button-faculty text-left" data-target="#collapseTwo" data-toggle="collapse" type="button">
+                    Elementos Corriculares
+                </button>
+            </div>
+            <div aria-labelledby="headingTwo" class="collapse" data-parent="#accordionFaculties" id="collapseTwo">
+                <div class="card-body p-0">
+                    <div class="list-group">
+                        <a class="list-group-item list-group-item-action pl-5 br-0" href="intraclases">
+                            Tareas Intraclases
+                        </a>
+                        <a class="list-group-item list-group-item-action pl-5 br-0" href="extraclases">
+                            Tareas Extraclases
+                        </a>
+                        <a class="list-group-item list-group-item-action pl-5 br-0" href="diario">
+                            Diarios Metacognitivos
+                        </a>
+                        <a class="list-group-item list-group-item-action pl-5 br-0" href="distribucionDiarios">
+                            Reparticion de diarios
+                        </a>
+                        <a class="list-group-item list-group-item-action pl-5 br-0" href="#">
+                            Reporte de participación
+                        </a>
+                        <a class="list-group-item list-group-item-action pl-5 br-0" href="proyecto">
+                            Proyecto
+                        </a>
+                        <a class="list-group-item list-group-item-action pl-5 br-0" href="practicalaboratorio">
+                            Practicas de Laboratorio
+                        </a>
+                        <a class="list-group-item list-group-item-action pl-5 br-0" href="evaluaciones">
+                            Evaluaciones
+                        </a>
+                        <a class="list-group-item list-group-item-action pl-5 br-0" href="examenes">
+                            Examenes
+                        </a>
+                        <a class="list-group-item list-group-item-action pl-5 br-0" href="anexos">
+                            Anexos
+                        </a>
+                        <a class="list-group-item list-group-item-action pl-5 br-0" href="#">
+                            Informe Final
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

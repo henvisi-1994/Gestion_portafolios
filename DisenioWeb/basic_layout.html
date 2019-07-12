@@ -1,26 +1,21 @@
-<!DOCTYPE doctype html>
-<html lang="es">
-    <body>
-        <div class="col-9 px-0 ">
-        </div>
-    </body>
-{% load static from staticfiles %}
-</html>
 <!DOCTYPE html>
+{% load static from staticfiles %}
 <html lang="en">
-    {% include "header.html" %}
-    <body>
-        <div class="container-fluid mx-0 px-0">
-            {% include "menu.html" %}
-            <div class="row mx-0">
-                {% include "barraLateral.html" %}
-                <div class="col-9  col-md-offset-6">
-                    {% block content %}
-                {% endblock content %}
+{% include "header.html" %}
+<body>
+    <div class="container-fluid mx-0 px-0 h-100 d-flex flex-column">
+        {% include "menu.html" %}
+        <div class="row mx-0 flex-fill">
+            {% include "barraLateral.html" %}
+            <div class="col-9 p-4 container-main d-flex justify-content-center">
+                <div class="container-subjects d-flex-column p-4 text-center">
+                     {% block content %}
+                    {% endblock content %}
                 </div>
             </div>
         </div>
+    </div>
         {% include "footer.html" %}
         {% include "scripts.html" %}
-    </body>
+</body>
 </html>
