@@ -39,3 +39,5 @@ def diarios(request):
 	return render(request,"diarios.html")
 def lista_diarios(request):
 	return render(request,"listaDiarios.html")
+def mis_port_est(request):
+	return render(request,"misPortEst.html")

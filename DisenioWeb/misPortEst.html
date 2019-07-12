@@ -1,0 +1,43 @@
+{% extends "basic_layout.html" %}
+{% load static from staticfiles %}
+{% block content%}
+<div class="text-center">
+    <h1>
+        Mis Portafolios
+    </h1>
+</div>
+<div class="p-5">
+    <table class="table table-borderless">
+        <tbody>
+            <tr>
+                <td class="text-center align-middle">
+                    Sistemas Operativos II-2019-E1
+                </td>
+                <td class="text-center">
+                    <button class="btn btn-success p-3" disabled="" type="button">
+                    </button>
+                </td>
+                <td class="text-center">
+                    <button class="btn btn-transparent border">
+                         <i class="fa fa-download" aria-hidden="true"></i> Descargar Portafolio
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td class="text-center align-middle">
+                    Programacion VI-2019-E1
+                </td>
+                <td class="text-center">
+                    <button class="btn btn-danger p-3" disabled="" type="button">
+                    </button>
+                </td>
+                <td class="text-center">
+                    <button class="btn btn-white border">
+                       <i class="fa fa-download" aria-hidden="true"></i> Descargar Portafolio
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+{% endblock content%}

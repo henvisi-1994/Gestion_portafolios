@@ -67,3 +67,11 @@ html, body {
 .bn {
     border: none;
 }
+/* pie de pagina */
+.pie-pag{
+    display: flex;
+    justify-content: center;
+}
+.pie-pag p{
+    margin-right: 10px;
+}
