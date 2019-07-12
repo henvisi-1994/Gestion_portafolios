@@ -1,0 +1,90 @@
+{% extends "basic_layout.html" %}
+{% block content%}
+
+   	<div class="container">
+   		<center>
+        <h3>
+            Crear Portafolio
+        </h3>
+    </center>
+   		Asignatura:       <input autofocus="" class="form-control" id="asignatura"  required="" type="text">
+    <div class="row">
+        <div class="form-group col">
+            <label for="exampleFormControlSelect1">
+                Seleccione la Fecha:
+            </label>
+     	 		<input autofocus="" class="form-control" id="fecha_inicio"  required="" type="date">
+
+        </div>
+        <div class="form-group col">
+             <label for="exampleFormControlSelect1">
+                a:
+            </label>
+     	 		<input autofocus="" class="form-control" id="fecha_fin"  required="" type="date">
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col">
+                <label for="exampleFormControlSelect1">
+                    Seleccione un Horario:
+                </label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>
+                        Seleccione el Dia:
+                    </option>
+                    <option>
+                        Lunes
+                    </option>
+                    <option>
+                        Martes
+                    </option>
+                    <option>
+                        Miercoles
+                    </option>
+                    <option>
+                        Jueves
+                    </option>
+                    <option>
+                        Viernes
+                    </option>
+                </select>
+            </div>
+                    <div class="form-group col">
+                  <label for="exampleFormControlSelect1">
+                    <br>
+                </label>
+                <br>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>
+                        Cantidad de Horas:
+                    </option>
+                    <option>
+                        1 hora
+                    </option>
+                     <option>
+                        2 horas
+                    </option>
+                     <option>
+                        3 horas
+                    </option>
+                </select>
+            </div>
+        </div>
+     <div class="row">
+     	<div class="form-group col">
+     	<label for="exampleFormControlSelect1">
+                    Estudiante:
+                </label>
+            </div>
+     </div>
+	Clave de Matricula:    <input autofocus="" class="form-control" id="matricula"  required="" type="text">
+     <br>
+	<center><button>
+		GUARDAR
+	</button>
+	</center>
+
+</div>
+
+
+{% endblock content%}
