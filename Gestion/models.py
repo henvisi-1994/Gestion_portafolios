@@ -9,9 +9,9 @@ class usuarios(models.Model):
 class persona(models.Model):
     per_nombres=models.CharField(max_length=50)
     per_apellidos=models.CharField(max_length=50)
-    per_correo=CharField(max_length=100)
+    per_correo=models.CharField(max_length=100)
     usr_cedula=models.ForeignKey(usuarios, on_delete=models.CASCADE)
-   
+
 class paralelos(models.Model):
     par_codigo=models.CharField(primary_key=True,max_length=20)
     par_nombre=models.CharField(max_length=100)
@@ -23,12 +23,12 @@ class periodo(models.Model):
 class facultades(models.Model):
     fac_codigo=models.CharField(primary_key=True,max_length=20)
     fac_nombre=models.CharField(max_length=100)
-    
+
 class carreras(models.Model):
     car_codigo=models.CharField(primary_key=True,max_length=20)
     carr_nombre=models.CharField(max_length=100)
     far_codigo=models.ForeignKey(facultades, on_delete=models.CASCADE)
-
+   
 class semestre(models.Model):
     sem_codigo=models.CharField(primary_key=True,max_length=20)
     sem_nombre=models.CharField(max_length=100)
@@ -43,6 +43,5 @@ class asignaturas(models.Model):
     sem_codigo=models.ForeignKey(semestre, on_delete=models.CASCADE)
 
 class det_persona_asignaturas(models.Model):
-    asig_codigo=models.OneToOneField(asignaturas,on_delete=models.CASCADE)
+    asig_codigo=models.ForeignKey(asignaturas, on_delete=models.CASCADE)
     usr_cedula=models.OneToOneField(persona,on_delete=models.CASCADE)
-    
