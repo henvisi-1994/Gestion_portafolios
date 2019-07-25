@@ -41,3 +41,5 @@ def lista_diarios(request):
 	return render(request,"listaDiarios.html")
 def mis_port_est(request):
 	return render(request,"misPortEst.html")
+def gestion_est(request):
+	return render(request,"gestionAlumnos.html")
