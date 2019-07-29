@@ -1,5 +1,6 @@
 from django.urls import include, path
 from GestionM import views
+
 urlpatterns = [
     path('', views.gestion_portafolio),
     path('datosInformativos', views.datos_informativos),

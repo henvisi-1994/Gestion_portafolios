@@ -2,156 +2,161 @@
 {% load static from staticfiles %}
 <html lang="en">
 {% include "header.html" %}
+
 <body>
-    <div class="container-fluid mx-0 px-0 h-100 d-flex flex-column">
+    <div id="menu" style="margin-left: 17%">
         {% include "menu.html" %}
-        <div class="row mx-0 flex-fill">
-            {% include "barraLateralC.html" %}
-            <div class="col-9 p-4 container-main d-flex justify-content-center">
-                <div class="container-subjects d-flex-column p-4 text-center">
-                    <center>
-                        <h3>
-                            Aulas Virtuales
-                        </h3>
-                    </center>
-                     <div class="list-group list-group-flush col-md-offset-6">
-                            <li class="list-group-item">
-                                <a class="nav-link" href="#">
-                                    Auditoría Informática - 2019 - E1
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a class="nav-link" href="#">
-                                    Administración de Centros de Cómputo - 2019 - E1
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a class="nav-link" href="#">
-                                    Base de Datos II
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a class="nav-link" href="#">
-                                    Base de Datos III - 2019 - E1
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a class="nav-link" href="#">
-                                    Emprendimiento - 2019 - E1
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a class="nav-link" href="#">
-                                    Ética Profesional - 2019 - E1
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a class="nav-link" href="#">
-                                    Ingeniería de Software I - 2019 - E1
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a class="nav-link" href="#">
-                                    Ingeniería de Software II - 2019 - E1
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a class="nav-link" href="#">
-                                    Inteligencia Artifical I - 2019 - E1
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a class="nav-link" href="#">
-                                    Inteligencia Artificial II - 2019 - E1
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a class="nav-link" href="#">
-                                    Investigación de Operaciones - 2019 - E1
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a class="nav-link" href="#">
-                                    Métodos Numéricos - 2019 - E1
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a class="nav-link" href="#">
-                                    Microprocesadores - 2019 - E1
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a class="nav-link" href="#">
-                                    Optativa I - 2019 - E1
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a class="nav-link" href="#">
-                                    Optativa II - 2019 - E1
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a class="nav-link" href="#">
-                                    Optativa III - 2019 - E1
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a class="nav-link" href="#">
-                                    Organización y Arquitectura de Computadores - 2019 - E1
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a class="nav-link" href="#">
-                                    Programación V - 2019 - E1
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a class="nav-link" href="#">
-                                    Programación VI - 2019 - E1
-                                </a>
-                            </li>
-                            <li class="list-group-item">
-                                <a class="nav-link" href="#">
-                                    Programación VII - 2019 - E1
-                                </a>
-                            </li>
-                        </div>
-                        <br>
-                        </br>
-                        <div class="col-12 col-md-offset-6">
-                            <ul class="pagination justify-content-center">
-                                <li class="page-item">
-                                    <a class="page-link" href="#">
-                                        Previous
-                                    </a>
-                                </li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">
-                                        1
-                                    </a>
-                                </li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">
-                                        2
-                                    </a>
-                                </li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">
-                                        3
-                                    </a>
-                                </li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">
-                                        Next
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+    </div>
+
+    <div class="page-wrapper chiller-theme toggled">
+
+        {% include "barraLateralC.html" %}
+        <!-- page-content" -->
+        <div id="content" class="container-main d-flex justify-content-center" style="margin-left: 17%">
+            <div class="container-subjects d-flex-column p-4 text-center">
+                <center>
+                    <h3>
+                        Aulas Virtuales
+                    </h3>
+                </center>
+                <div class="list-group list-group-flush col-md-offset-6">
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#">
+                            Auditoría Informática - 2019 - E1
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#">
+                            Administración de Centros de Cómputo - 2019 - E1
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#">
+                            Base de Datos II
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#">
+                            Base de Datos III - 2019 - E1
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#">
+                            Emprendimiento - 2019 - E1
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#">
+                            Ética Profesional - 2019 - E1
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#">
+                            Ingeniería de Software I - 2019 - E1
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#">
+                            Ingeniería de Software II - 2019 - E1
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#">
+                            Inteligencia Artifical I - 2019 - E1
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#">
+                            Inteligencia Artificial II - 2019 - E1
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#">
+                            Investigación de Operaciones - 2019 - E1
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#">
+                            Métodos Numéricos - 2019 - E1
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#">
+                            Microprocesadores - 2019 - E1
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#">
+                            Optativa I - 2019 - E1
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#">
+                            Optativa II - 2019 - E1
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#">
+                            Optativa III - 2019 - E1
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#">
+                            Organización y Arquitectura de Computadores - 2019 - E1
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#">
+                            Programación V - 2019 - E1
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#">
+                            Programación VI - 2019 - E1
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="nav-link" href="#">
+                            Programación VII - 2019 - E1
+                        </a>
+                    </li>
+                </div>
+                <br>
+                </br>
+                <div class="col-12 col-md-offset-6">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                            <a class="page-link" href="#">
+                                Previous
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">
+                                1
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">
+                                2
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">
+                                3
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">
+                                Next
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-        {% include "footer.html" %}
-        {% include "scripts.html" %}
+    {% include "footer.html" %}
+    {% include "scripts.html" %}
 </body>
+
 </html>

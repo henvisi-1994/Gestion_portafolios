@@ -1,104 +1,77 @@
-<div class="col-3 px-0 h-100">
-    <div class="accordion h-100 container-faculties" id="accordionFaculties">
-        <div class="card br-0 bn">
-            <div class="card-header p-0" id="headingOne">
-                <button aria-controls="collapseOne" aria-expanded="true" class="btn button-faculty text-left" data-target="#collapseOne" data-toggle="collapse" type="button">
-                    INGENIERÍA CIVÍL
-                </button>
-            </div>
-            <div aria-labelledby="headingOne" class="collapse" data-parent="#accordionFaculties" id="collapseOne">
-                <div class="card-body p-0">
-                    <div class="list-group">
-                        <a class="list-group-item list-group-item-action pl-5 br-0" href="#">
-                            INGENIERÍA EN SISTEMAS
-                        </a>
-                        <a class="list-group-item list-group-item-action pl-5 br-0" href="#">
-                            INGENIERÍA CIVÍL
-                        </a>
-                    </div>
+<div id="sidebar">
+    <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+        <i class="fas fa-bars"></i>
+    </a>
+    <nav class="sidebar-wrapper">
+        <div class="sidebar-content">
+            <div class="sidebar-brand">
+                <a href="#">Sistema de Gestión de Portafolios</a>
+                <div id="close-sidebar">
+                    <i class="fas fa-times"></i>
                 </div>
             </div>
-        </div>
-        <div class="card br-0 bn">
-            <div class="card-header p-0" id="headingTwo">
-                <button aria-controls="collapseTwo" aria-expanded="false" class="btn button-faculty text-left" data-target="#collapseTwo" data-toggle="collapse" type="button">
-                    CIENCIAS SOCIALES
-                </button>
-            </div>
-            <div aria-labelledby="headingTwo" class="collapse" data-parent="#accordionFaculties" id="collapseTwo">
-                <div class="card-body p-0">
-                    <div class="list-group">
-                        <a class="list-group-item list-group-item-action pl-5 br-0" href="#">
-                            ARTES PLÁSTICAS
-                        </a>
-                        <a class="list-group-item list-group-item-action pl-5 br-0" href="#">
-                            ESTUDIOS SOCIALES
-                        </a>
+            <!--<div class="sidebar-search">
+                <div>
+                    <div class="input-group">
+                        <input type="text" class="form-control search-menu" placeholder="Search...">
+                        <div class="input-group-append">
+                            <span class="input-group-text">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </span>
+                        </div>
                     </div>
                 </div>
+            </div>-->
+            <!-- sidebar-search  -->
+            <div class="sidebar-menu">
+                <ul>
+                    <li class="header-menu">
+                        <span>Facultades</span>
+                    </li>
+                    <li class="sidebar-dropdown">
+                        <a href="#">
+                            <span>Ingeniería Civil</span>
+                        </a>
+                        <div class="sidebar-submenu">
+                            <ul>
+                                <li>
+                                    <a href="#" style="color:black">Ingeniería en Sistemas
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" style="color:black">Ingeniería Civil</a>
+                                </li>
+                                <li>
+                                    <a href="#" style="color:black">Ingeniería Ambiental</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="sidebar-dropdown">
+                        <a href="#">
+                            <span>Ciencias Sociales</span>
+                        </a>
+                        <div class="sidebar-submenu">
+                            <ul>
+                                <li>
+                                    <a href="#" style="color:black">Carrera 1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" style="color:black">Carrera 2</a>
+                                </li>
+                                <li>
+                                    <a href="#" style="color:black">Carrera 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
             </div>
+            <!-- sidebar-menu  -->
         </div>
-        <div class="card br-0 bn">
-            <div class="card-header p-0" id="headingThree">
-                <button aria-controls="collapseThree" aria-expanded="false" class="btn button-faculty text-left" data-target="#collapseThree" data-toggle="collapse" type="button">
-                    CIENCIAS EMPRESARIALES
-                </button>
-            </div>
-            <div aria-labelledby="headingThree" class="collapse" data-parent="#accordionFaculties" id="collapseThree">
-                <div class="card-body p-0">
-                    <div class="list-group">
-                        <a class="list-group-item list-group-item-action pl-5 br-0" href="#">
-                            TURISMO
-                        </a>
-                        <a class="list-group-item list-group-item-action pl-5 br-0" href="#">
-                            ECONOMÍA
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card br-0 bn">
-            <div class="card-header p-0" id="heading4">
-                <button aria-controls="collapse4" aria-expanded="false" class="btn button-faculty text-left" data-target="#collapse4" data-toggle="collapse" type="button">
-                    FACULTAD 4
-                </button>
-            </div>
-            <div aria-labelledby="heading4" class="collapse" data-parent="#accordionFaculties" id="collapse4">
-                <div class="card-body p-0">
-                    <div class="list-group">
-                        <a class="list-group-item list-group-item-action pl-5 br-0" href="#">
-                            CARRERA
-                        </a>
-                        <a class="list-group-item list-group-item-action pl-5 br-0" href="#">
-                            CARRERA1
-                        </a>
-                        <a class="list-group-item list-group-item-action pl-5 br-0" href="#">
-                            CARRERA2
-                        </a>
-                        <a class="list-group-item list-group-item-action pl-5 br-0" href="#">
-                            CARRERA3
-                        </a>
-                        <a class="list-group-item list-group-item-action pl-5 br-0" href="#">
-                            CARRERA4
-                        </a>
-                        <a class="list-group-item list-group-item-action pl-5 br-0" href="#">
-                            CARRERA5
-                        </a>
-                        <a class="list-group-item list-group-item-action pl-5 br-0" href="#">
-                            CARRERA6
-                        </a>
-                        <a class="list-group-item list-group-item-action pl-5 br-0" href="#">
-                            CARRERA7
-                        </a>
-                        <a class="list-group-item list-group-item-action pl-5 br-0" href="#">
-                            CARRERA8
-                        </a>
-                        <a class="list-group-item list-group-item-action pl-5 br-0" href="#">
-                            CARRERA9
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    </nav>
 </div>
+
+
+<!-- page-wrapper -->
