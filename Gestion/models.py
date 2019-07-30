@@ -1,7 +1,10 @@
 from django.db import models
-
+from django.contrib.auth.models import User
+from django.db.models.signals import post_save
+from django.dispatch import receiver
 # Create your models here.
 class usuarios(models.Model):
+    user = models.OneToOneField(User,on_delete=models.CASCADE,default="")
     usr_cedula=models.CharField(primary_key=True,max_length=10)
     usr_clave=models.CharField(max_length=20)
     usr_tipo=models.CharField(max_length=10)
@@ -45,3 +48,4 @@ class asignaturas(models.Model):
 class det_persona_asignaturas(models.Model):
     asig_codigo=models.ForeignKey(asignaturas, on_delete=models.CASCADE)
     usr_cedula=models.OneToOneField(persona,on_delete=models.CASCADE)
+
