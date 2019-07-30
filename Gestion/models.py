@@ -43,6 +43,7 @@ class asignaturas(models.Model):
     asig_codigo=models.CharField(primary_key=True,max_length=20)
     asig_codigo_port=models.CharField(max_length=20)
     asig_nombre=models.CharField(max_length=100)
+    asig_clave=models.CharField(max_length=100)
     sem_codigo=models.ForeignKey(semestre, on_delete=models.CASCADE)
 
 class det_persona_asignaturas(models.Model):

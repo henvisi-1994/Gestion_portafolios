@@ -20,8 +20,6 @@ def examenes(request):
 	return render(request,"examenes.html")
 def anexos(request):
 	return render(request,"anexos.html")
-def crear_portafolios(request):
-	return render(request,"crearPortafolio.html")
 def eliminar_portafolios(request):
 	return render(request,"eliminarPortafolio.html")
 def visualizar_portafolios(request):

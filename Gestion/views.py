@@ -3,6 +3,7 @@ from django.contrib.auth import authenticate
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login as do_login
 from django.contrib.auth import logout as do_logout
+from .forms import AsignaturaForm
 # Create your views here.
 def test(request):
 	return render(request,"principal.html", {})
@@ -17,20 +18,6 @@ def ver_asignatura(request):
 	 context = {'object_list': asignatura_list}
 	 return render(request,"gestion_asignatura.html",context)
 
-def insertar_asignatura(request):
-	cod = request.GET.get('asig_codigo','')
-	codPort = request.GET.get('asig_codigo_port','')
-	nom = request.GET.get('asig_nombre','')
-	semestre = request.GET.get('sem_codigo_id','')
-	if cod:
-		if codPort:
-			if nom:
-				if semestre:
-					p=asignaturas(asig_codigo=cod,asig_codigo_port=codPort,asig_nombre=nom,sem_codigo_id=semestre)
-					p.save()
-					return render_to_response('gestion_asignatura.html',{"exito":True})							
-	else:
-		return render_to_response('gestion_asignatura.html')
 def eliminar_asignatura(request):
 	cod=request.GET.get('asig_codigo','')
 	results=asignatura.objects.all().order_by('asig_codigo')
@@ -94,4 +81,12 @@ def logout(request):
     do_logout(request)
     # Redireccionamos a la portada
     return redirect('/')
+def crear_portafolios(request):
+	if request.method == 'POST':
+		form = AsignaturaForm(request.POST)
+		if form.is_valid():
+			form.save()
+		return render('gestion_asignatura.html',{})
+	form = AsignaturaForm()
+	return render(request,'crearPortafolio.html',{'form': form})
 

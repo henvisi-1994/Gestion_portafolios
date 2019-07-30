@@ -1,21 +1,6 @@
 from django import forms
-from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
-from django.contrib.auth.models import User
-
-from .models import Perfil
-
-class SignUpForm(UserCreationForm):
-    first_name = forms.CharField(max_length=140, required=True)
-    last_name = forms.CharField(max_length=140, required=False)
-    email = forms.EmailField(required=True)
-
+from .models import asignaturas
+class AsignaturaForm(forms.ModelForm):
     class Meta:
-        model = User
-        fields = (
-            'username',
-            'email',
-            'first_name',
-            'last_name',
-            'password1',
-            'password2',
-        )
+        model = asignaturas
+        fields = "__all__"

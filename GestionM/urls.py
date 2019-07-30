@@ -12,7 +12,6 @@ urlpatterns = [
     path('evaluaciones', views.evaluaciones),
     path('examenes', views.examenes),
     path('anexos', views.anexos),
-    path('crearPortafolios', views.crear_portafolios),
     path('visualizarPortafolios', views.visualizar_portafolios),
     path('eliminarPortafolios', views.eliminar_portafolios),
     path('matriculaEst', views.matricula_est),
